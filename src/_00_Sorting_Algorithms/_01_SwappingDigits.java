@@ -23,8 +23,21 @@ class _01_SwappingDigits {
 	}
 	
 	//1. Complete the method so that the first two elements of the array are swapped
-	public static void swapArrayOfTwo(int[] arr) {
-		
+	public static void swapArrayOfTwo(int[] arr, int n) {
+		 for (int i = n - 1; i > 0; i--) 
+		    { 
+		     
+		        if (arr[i] < arr[i - 1]) 
+		        {          
+		            int j = i - 1; 
+		            while (j >= 0 && arr[i] < arr[j]) 
+		                j--;	  
+		            int temp = arr[i]; 
+		            arr[i] = arr[j + 1]; 
+		            arr[j + 1] = temp;	      
+		            break; 
+		        } 
+		    } 
 	}
 	
 	//2. Complete the method so that it sorts the array using a bubble sort.
