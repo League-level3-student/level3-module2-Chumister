@@ -10,7 +10,7 @@ class _01_SwappingDigits {
 	void test() {
 		int[] x = {5, 6};
 		int[] y = {6, 5};
-		swapArrayOfTwo(x);
+		swapArrayOfTwo(x, 0);
 		assertArrayEquals(y, x);
 		
 		int[] z = {7, 3, 5, 9, 2};
