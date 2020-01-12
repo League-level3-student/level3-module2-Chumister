@@ -51,6 +51,7 @@ public class MergeSorter extends Sorter {
 					j++;
 				}
                     //10. set array at k equal to temp array at i
+        
                     
                     //11. increase i by 1
                   
